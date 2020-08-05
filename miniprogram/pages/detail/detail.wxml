@@ -1,0 +1,23 @@
+ <view class=" content-list">
+
+      <view class="content-list-box clearfix" wx:for="{{bookingData}}" wx:key="index">
+        <view class="fl content-img">
+          <image class="auto-img c-img" mode="widthFix" src="{{item.bookingType.url}}"></image>
+        </view>
+
+        <view class="fl content-left clearfix">
+          <view class="fl content-left-text">
+            <view class="clearfix {{item.userBooking.comment == ''?'content-type-item':''}}">
+              <view class="fl content-type">{{item.bookingType.title}}</view>
+              <view class="fl content-pay-type">{{item.accountType}}</view>
+              <view class="fl time">{{item.userBooking.date}}</view>
+            </view>
+            <view wx:if="{{item.userBooking.comment != ''}}">{{item.userBooking.comment}}</view>
+          </view>
+          <view class="fr content-right-text {{item.costType.type}}">￥{{item.userBooking.money}}</view>
+        </view>
+      </view>
+
+      
+
+    </view>

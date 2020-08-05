@@ -1,0 +1,140 @@
+.booking-bg {
+  height: 180rpx;
+  background-color: #61b7e1;
+}
+.booking-box {
+  padding:20rpx ;
+  position: relative;
+  margin-top: -110rpx;
+}
+.booking-box-title {
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding-top: 20rpx;
+  /* height: 500rpx; */
+}
+.title {
+  width: 200rpx;
+  /* background-color: #ddd; */
+  /* 如果再用margin会外边距合并 */
+  margin:0 auto;
+  overflow: hidden;
+  border: 1rpx solid #61b7e1;
+  border-radius: 30rpx;
+}
+.title-item {
+  width: 50%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+.title-item.active {
+  background-color: #1296DB;
+}
+
+
+.icons-item {
+  margin-top: 20rpx;
+}
+.icons-list {
+ 
+  width: 20%;
+}
+.icons-box {
+  width: 60rpx;
+  /* text-align: center; */
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  transition:transform .1s linear,font-weight .1s linear;
+}
+.icons-box.active {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+.icons-img {
+  width: 60rpx;
+  height: 60rpx;
+  background-color: #ddd;
+  border-radius: 50%;
+  /* margin-bottom: 10rpx; */
+}
+.a-img {
+  height: 60rpx;
+}
+.icons-text {
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.account{
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 0 20rpx;
+  border-radius: 20rpx;
+}
+
+.account-title{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+
+.account-items{
+  padding: 20rpx 0;
+}
+
+.account-item{
+  width: calc(20% - 20rpx);
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  font-size: 24rpx;
+  background-color: #E8E8E8;
+  margin: 0 10rpx;
+  border-radius: 24rpx;
+}
+.account-item.active{
+  background-color: #1296DB;
+}
+
+.booking-info{
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  border-radius: 20rpx;
+}
+
+.booking-item-title{
+  font-size: 28rpx;
+  width: 80rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+}
+
+.booking-date{
+  width: calc(100% - 80rpx);
+  height: 60rpx;
+}
+.picker-box{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #808080;
+
+}
+.weui-input{
+  height: 100%;
+  font-size: 28rpx;
+}
+
+.save{
+ background-color: #1296DB;
+ font-size: 32rpx;
+ border-radius: 20rpx;
+ height: 80rpx;
+ text-align: center;
+ line-height: 80rpx;
+ margin-top: 80rpx;
+}

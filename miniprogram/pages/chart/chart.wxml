@@ -1,0 +1,68 @@
+<view class="charts">
+  <view class="charts-box clearfix">
+    <view class="fl inp">
+      <picker class="picker-box" mode="date" bindchange="chooseDate"  start="{{dateData.start}}" end="{{dateData.end}}">
+        {{currentData}}
+      </picker>
+    </view>
+    <view class="fr charts-search" bindtap="changeChoose">{{chooseData.titles[chooseData.default]}}查询</view>
+  </view>
+
+  <view class="charts-item clearfix">
+    <view class="fl charts-item-box" wx:for="{{titleData}}" wx:key="index" bindtap="select" data-index="{{index}}" data-active="{{item.isActive}}">
+      <view class="c-item charts-item-{{item.isActive?item.type:''}}">
+        <view>{{chooseData.titles[chooseData.default]}}{{item.name}}</view>
+        <view class="{{item.type}}">￥{{item.total}}</view>
+      </view>
+    </view>
+   
+  </view>
+  <!-- 饼图 -->
+  <view class="pie" hidden="{{typesData[currentType].length == 0}}">
+    <canvas style="width: {{canvasWidth + 'px'}};" class="canvas" canvas-id="pieCanvas"></canvas>
+  </view>
+
+  <view class="type-box">
+    <view class="type-item clearfix" data-costtitle="{{item.costTitle}}" data-title="{{item.title}}" data-ids="{{item.ids}}" bindtap="viewDetail" wx:for="{{typesData[currentType]}}" wx:key="index">
+      <view class="fl type-icon">
+        <image class="auto-img icon-img" mode="widthFix" src="{{item.url}}"></image>
+      </view>
+      <view class="fl type-content">
+        <view class="type-content-top">
+          <view class="fl t-item type-top-left">{{item.title}}</view>
+          <view class="fr t-item type-top-{{currentType}}">￥{{item.total}}</view>
+        </view>
+        <view class="type-content-btm">
+          <view class="fl progress">
+            <view class="active-progress" style="width:{{item.percent}};background-color:{{item.color}}"></view>
+          </view>
+          <view class="fr count">{{item.count}}笔</view>
+        </view>
+      </view>
+      <view class="fr type-arrow">
+        <image class="auto-img img-box" mode="widthFix" src="../../icons/right-arrow.png"></image>
+      </view>
+    </view>
+
+     <!-- <view class="type-item clearfix">
+      <view class="fl type-icon">
+        <image class="auto-img icon-img" mode="widthFix" src="cloud://issac-hyr3s.6973-issac-hyr3s-1302633866/list/2.png"></image>
+      </view>
+      <view class="fl type-content">
+        <view class="type-content-top">
+          <view class="fl t-item type-top-left">学习</view>
+          <view class="fr t-item type-top-zhichu">￥3000</view>
+        </view>
+        <view class="type-content-btm">
+          <view class="fl progress">
+            <view class="active-progress"></view>
+          </view>
+          <view class="fr count">3笔</view>
+        </view>
+      </view>
+      <view class="fr type-arrow">
+        <image class="auto-img img-box" mode="widthFix" src="../../icons/right-arrow.png"></image>
+      </view>
+    </view> -->
+  </view>
+</view>

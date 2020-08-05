@@ -1,0 +1,135 @@
+.home-title {
+  /* height: 500rpx; */
+  background-color: #1296DB;
+}
+.home-title-box {
+  padding: 40rpx;
+}
+.title-money {
+  margin-top: 10rpx;
+  font-size: 48rpx;
+  font-weight: bold;
+}
+.title-content {
+  margin-top: 80rpx;
+  position: relative;
+}
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 2rpx;
+  height: 24rpx;
+  background-color: #000;
+}
+.title-content-box {
+  font-size: 24rpx;
+  color: #666;
+}
+.title-content-money {
+  margin-left: 10rpx;
+}
+.content{
+  padding: 20rpx;
+}
+.content-title{
+  height: 40rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.content-date {
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.content-item {
+  margin-left: 16rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.content-money {
+  margin-left: 10rpx;
+}
+.point-box {
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.point-item{
+  height: 40rpx;
+  position: relative;
+}
+.picker-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40rpx;
+  overflow: hidden;
+  opacity: 0;
+}
+.point {
+  width: 8rpx;
+  height: 8rpx;
+  background-color: #999;
+  border-radius: 50%;
+  margin-top: 16rpx;
+  margin-left: 6rpx;
+}
+.content-list{
+  margin-top: 5rpx;
+}
+.content-list-box {
+  height: 70rpx;
+  /* margin-bottom: 20rpx; */
+  padding: 5rpx 0;
+}
+.content-img {
+  height: 60rpx;
+  width: 60rpx;
+  border-radius: 50%;
+  /* background-color: #ccc; */
+}
+.content-left {
+  margin-left: 20rpx;
+  height: 70rpx;
+  width: calc(100% - 80rpx);
+  padding-bottom: 10rpx;
+  border-bottom: 2rpx solid #e8e8e8;
+  box-sizing: border-box;
+  padding-right: 20rpx;
+}
+.content-left-text {
+  
+  font-size: 24rpx;
+  color: #999;
+ 
+}
+.content-type {
+  font-weight: bold;
+  font-size: 28rpx;
+  color: #000;
+}
+.content-pay-type {
+  margin-left: 20rpx; 
+}
+.content-right-text {
+  /* width: rpx; */
+  height: 70rpx;
+  line-height: 70rpx;
+  /* padding-right:20rpx; */
+}
+.shouru {
+  color: #00FF66;
+}
+.zhichu {
+  color: red;
+}
+.content-type-item {
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.decimal {
+  font-size: 28rpx;
+  line-height: 78rpx;
+}

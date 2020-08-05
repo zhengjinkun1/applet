@@ -1,0 +1,143 @@
+.charts-box{
+  padding: 20rpx;
+  background-color: #1296DB;
+  /* height: 300rpx; */
+}
+.inp {
+  background-color: #fff;
+  height: 60rpx;
+  width: calc(100% - 140rpx);
+  border-radius: 30rpx;
+  /* padding: 10rpx 20rpx; */
+}
+.charts-search{
+  margin-left: 20rpx;
+  width: 100rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background-color: #fff;
+  padding: 10rpx;
+  border-radius: 30rpx;
+}
+.picker-box {
+  height: 60rpx;
+  line-height: 60rpx;
+  /* margin-left: 10rpx; */
+}
+.charts-item {
+  padding: 10rpx;
+  /* height: 200rpx; */
+  background-color: #fff;
+}
+.charts-item-box {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  height: 110rpx;
+}
+.c-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+}
+.charts-item-shouru {
+  border: 2rpx solid #00FF66;
+}
+.charts-item-zhichu {
+  border: 2rpx solid red;
+}
+.shouru {
+  color: #00FF66;
+}
+.zhichu {
+  color: red;
+}
+.pie {
+  margin-top: 10rpx;
+  /* height: 600rpx; */
+  background-color: #fff;
+}
+.type-box {
+  margin-top: 10rpx;
+}
+.type-item {
+  background-color: #fff;
+  height: 80rpx;
+  padding: 10rpx;
+}
+.type-item:not(:last-child) {
+  border-bottom: 2rpx solid #ccc;
+}
+.type-icon {
+  height: 80rpx;
+  width: 80rpx;
+  /* background-color: #ddd; */
+  border-radius: 50%;
+  overflow: hidden;
+}
+.icon-img {
+  height: 80rpx;
+}
+.type-content {
+  margin-left: 10rpx;
+  width: calc(100% - 160rpx);
+  height: 80rpx;
+  /* background-color: #ccc; */
+}
+.type-arrow {
+  margin-left: 10rpx;
+  width: 60rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+  /* background-color: #ddd; */
+}
+.img-box {
+  height: 40rpx;
+}
+.type-content-top {
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.type-top-shouru {
+  font-weight: bold;
+  color: #00FF66;
+}
+.type-top-zhichu {
+  font-weight: bold;
+  color: red;
+}
+.type-content-btm {
+  height: 40rpx;
+  line-height: 40rpx;
+  /* background-color: red; */
+}
+.progress {
+  width: calc(100% - 100rpx);
+  height: 26rpx;
+  margin-top: 7rpx;
+  background-color: #ccc;
+  border-radius: 13rpx;
+  overflow: hidden;
+}
+.active-progress {
+  height: 26rpx;
+  width: 0rpx;
+  transition: width .2s linear, background-color .2s linear;
+  /* background-color: #00FF66; */
+}
+.count {
+  width: 100rpx;
+  text-align: right;
+  font-size: 24rpx;
+}
+.t-item {
+  font-size: 24rpx;
+}
+.canvas{
+  /* width: 600rpx; */
+  height: 600rpx;
+}

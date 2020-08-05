@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/booking/booking",
+    "pages/home/home",
+    "pages/my/my",
+    "pages/mybooking/mybooking",
+    "pages/chart/chart",
+    "pages/detail/detail",
+    "pages/auth/auth",
+    "pages/epidmic/epidmic"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1296DB",
+    "navigationBarTitleText": "我的",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#DDDDDD",
+    "selectedColor": "#1296DB",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./icons/1.png",
+        "selectedIconPath": "./icons/1-active.png"
+      },
+      {
+        "pagePath": "pages/booking/booking",
+        "text": "记账",
+        "iconPath": "./icons/2.png",
+        "selectedIconPath": "./icons/2-active.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "图表",
+        "iconPath": "./icons/3.png",
+        "selectedIconPath": "./icons/3-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "图表",
+        "iconPath": "./icons/4.png",
+        "selectedIconPath": "./icons/4-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,75 @@
+<view class="home">
+  <view class="home-title">
+    <view class="home-title-box">
+      <view>
+        <view class="title-text">本月结余</view>
+        <view class="title-money clearfix">
+          <view class="fl">￥{{monthBookingData.jieyu[0]}}.</view>
+          <view class="fl decimal">{{monthBookingData.jieyu[1]}}</view>
+        </view>
+      </view>
+
+      <view class="clearfix title-content">
+        <view class="clearfix fl title-content-box">
+          <view class="fl">本月收入</view>
+          <view class="fl title-content-money">￥{{monthBookingData.shouru}}</view>
+        </view>
+
+        <view class="clearfix fr title-content-box">
+          <view class="fl">本月支出</view>
+          <view class="fl title-content-money">￥{{monthBookingData.zhichu}}</view>
+        </view>
+        <view class="line"></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="clearfix content-title">
+      <view class="fl clearfix">
+        <view class="fl content-date">{{currentDate}}</view>
+        <view class="fl content-item">
+          <view class="fl content-text">收入:</view>
+          <view class="fl content-money">{{currentBookingData.shouru}}</view>
+        </view>
+        <view class="fl content-item">
+          <view class="fl content-text">支出:</view>
+          <view class="fl content-money">{{currentBookingData.zhichu}}</view>
+        </view>
+      </view>
+      <view class="fr point-item">
+        <view class="clearfix point-box fl">
+          <view class="point fl"></view>
+          <view class="point fl"></view>
+          <view class="point fl"></view>
+        </view>
+        <picker class="picker-box" bindchange="selectDate" mode="date" start="{{dateRange.start}}" end="{{dateRange.end}}">
+          你好
+        </picker>
+      </view>
+    </view>
+
+    <view class=" content-list">
+
+      <view class="content-list-box clearfix" wx:for="{{getBookingData}}" wx:key="index">
+        <view class="fl content-img">
+          <image class="auto-img c-img" mode="widthFix" src="{{item.bookingType.url}}"></image>
+        </view>
+
+        <view class="fl content-left clearfix">
+          <view class="fl content-left-text">
+            <view class="clearfix {{item.userBooking.comment == ''?'content-type-item':''}}">
+              <view class="fl content-type">{{item.bookingType.title}}</view>
+              <view class="fl content-pay-type">{{item.accountType}}</view>
+            </view>
+            <view wx:if="{{item.userBooking.comment != ''}}">{{item.userBooking.comment}}</view>
+          </view>
+          <view class="fr content-right-text {{item.costType.type}}">￥{{item.userBooking.money}}</view>
+        </view>
+      </view>
+
+      
+
+    </view>
+  </view>
+</view>
